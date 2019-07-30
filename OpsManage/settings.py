@@ -68,6 +68,7 @@ INSTALLED_APPS = [
     'OpsManage',
     'navbar',
     'asset',
+    'databases'
     'api',
     'deploy',
     'orders',
