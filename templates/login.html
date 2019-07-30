@@ -18,20 +18,17 @@
 
   <body class="login">
     <div>
-      <a class="hiddenanchor" id="signup"></a>
-      <a class="hiddenanchor" id="signin"></a>
-
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
             <form role="form" method="post">{% csrf_token %}
               <h1>CRM版本发布管理</h1>
-              <div class="input-prepend form-group">
-                <span class="add-on"><i class="icon-key"></i></span>
+              <div class="form-group">
+                <span class="fa fa-user-circle-o fa-2x"></span>
                 <input type="text" class="form-control" placeholder="Username" name="username" required="" />
               </div>
-              <div class="input-prepend">
-                <span class="add-on"><i class="icon-key"></i></span>
+              <div class="form-group">
+                <span class="fa fa-unlock-alt fa-2x"></span>
                 <input type="password" class="form-control" placeholder="Password" name="password" required="" />
               </div>
                 {% if login_error_info  %}
@@ -40,7 +37,6 @@
                     </div>
                 {% endif %}
               <div>
-                  <i class="fa fa-paper-plane"></i>
                 <button type="submit" class="btn btn-primary submit">登录</button>
               </div>
 
