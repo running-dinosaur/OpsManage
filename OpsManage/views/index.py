@@ -6,7 +6,7 @@ from django.shortcuts import render
 from django.contrib import auth
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-class Index(LoginRequiredMixin,View):
+class IndexView(LoginRequiredMixin,View):
     login_url = '/login/'
     def get(self, request, *args, **kwagrs):
         return render(request,'base.html',{"user":request.user})

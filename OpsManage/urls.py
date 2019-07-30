@@ -20,7 +20,7 @@ from OpsManage.views import index,users
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', index.Index.as_view()),
+    url(r'^$', index.IndexView.as_view()),
     url(r'^login/$', index.login),
     url(r'^logout/$', index.logout),
     url(r'^403/$', index.Permission.as_view()),
