@@ -11,8 +11,6 @@ class Index(LoginRequiredMixin,View):
     def get(self, request, *args, **kwagrs):
         return render(request,'base.html',{"user":request.user})
 
-
-
 def login(request):
     if request.session.get('username') is not None:
         return HttpResponseRedirect('/',{"user":request.user})
