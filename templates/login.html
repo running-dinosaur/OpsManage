@@ -23,12 +23,10 @@
           <section class="login_content">
             <form role="form" method="post">{% csrf_token %}
               <h1>CRM版本发布管理</h1>
-              <div class="form-group">
-                <span class="fa fa-user-circle-o fa-2x"></span>
+              <div>
                 <input type="text" class="form-control" placeholder="Username" name="username" required="" />
               </div>
-              <div class="form-group">
-                <span class="fa fa-unlock-alt fa-2x"></span>
+              <div>
                 <input type="password" class="form-control" placeholder="Password" name="password" required="" />
               </div>
                 {% if login_error_info  %}
