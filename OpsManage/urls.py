@@ -15,6 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url,include
 from django.contrib import admin
+from django.contrib.staticfiles.views import serve
+from django.urls import path
+
 from OpsManage.views import index,users
 
 
@@ -39,4 +42,5 @@ urlpatterns = [
     url(r'^wiki/',include('wiki.urls')),
     url(r'^order/',include('orders.urls')),
     url(r'^apply/',include('apply.urls')),
+    path('favicon.ico', serve, {'path': 'images/favicon.png'}),
 ]
