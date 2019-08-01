@@ -46,62 +46,13 @@ a:focus {
     text-decoration: none
 }
 
-.tiles {
-    border-top: 1px solid #ccc;
-    margin-top: 15px;
-    padding-top: 5px;
-    margin-bottom: 0
-}
-.tile {
-    overflow: hidden
-}
-
 .clear {
     clear: both
 }
 
-.widget_summary {
-    width: 100%;
-    display: -ms-inline-flexbox;
-    display: inline-flex
-}
-.widget_summary .w_left {
-    float: left;
-    text-align: left
-}
-.widget_summary .w_center {
-    float: left
-}
-.widget_summary .w_right {
-    float: left;
-    text-align: right
-}
-.widget_summary .w_right span {
-    font-size: 20px
-}
-.w_20 {
-    width: 20%
-}
-.w_25 {
-    width: 25%
-}
-.w_55 {
-    width: 55%
-}
-h5.graph_title {
-    text-align: left;
-    margin-left: 10px
-}
-h5.graph_title i {
-    margin-right: 10px;
-    font-size: 17px
-}
 span.right {
     float: right;
     font-size: 14px !important
-}
-.tile_info a {
-    text-overflow: ellipsis
 }
 
 button,
@@ -120,13 +71,7 @@ button,
 .input-group {
     margin-bottom: 10px
 }
-.ln_solid {
-    border-top: 1px solid #e5e5e5;
-    color: #ffffff;
-    background-color: #ffffff;
-    height: 1px;
-    margin: 20px 0
-}
+
 span.section {
     display: block;
     width: 100%;
@@ -149,109 +94,13 @@ span.section {
     border-color: #CCD0D7;
     box-shadow: none !important
 }
-legend {
-    font-size: 18px;
-    color: inherit
-}
-.form-horizontal .form-group {
-    margin-right: 0;
-    margin-left: 0
-}
-.form-control-feedback {
-    margin-top: 8px;
-    height: 23px;
-    color: #bbb;
-    line-height: 24px;
-    font-size: 15px
-}
-.form-control-feedback.left {
-    border-right: 1px solid #ccc;
-    left: 13px
-}
-.form-control-feedback.right {
-    border-left: 1px solid #ccc;
-    right: 13px
-}
-.form-control.has-feedback-left {
-    padding-left: 45px
-}
-.form-control.has-feedback-right {
-    padding-right: 45px
-}
+
 .form-group {
     margin-bottom: 10px
-}
-.validate {
-    margin-top: 10px
-}
-.invalid-form-error-message {
-    margin-top: 10px;
-    padding: 5px
-}
-.invalid-form-error-message.filled {
-    border-left: 2px solid #E74C3C
 }
 
 .btn {
     border-radius: 3px
-}
-a.btn-success,
-a.btn-primary,
-a.btn-warning,
-a.btn-danger {
-    color: #fff
-}
-.btn-success {
-    background: #26B99A;
-    border: 1px solid #169F85
-}
-.btn-success:hover,
-.btn-success:focus,
-.btn-success:active,
-.btn-success.active,
-.open .dropdown-toggle.btn-success {
-    background: #169F85
-}
-.btn-dark {
-    color: #E9EDEF;
-    background-color: #4B5F71;
-    border-color: #364B5F
-}
-.btn-dark:hover,
-.btn-dark:focus,
-.btn-dark:active,
-.btn-dark.active,
-.open .dropdown-toggle.btn-dark {
-    color: #FFFFFF;
-    background-color: #394D5F;
-    border-color: #394D5F
-}
-.btn-round {
-    border-radius: 30px
-}
-
-.btn_ {
-    display: inline-block;
-    padding: 3px 9px;
-    margin-bottom: 0;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    color: #333333;
-    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-    background-color: #f5f5f5;
-    background-image: linear-gradient(to bottom, #fff, #e6e6e6);
-    background-repeat: repeat-x;
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
-    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-    filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
-    border: 1px solid #cccccc;
-    border-bottom-color: #b3b3b3;
-    border-radius: 4px;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05)
 }
 
 span.tag {
@@ -459,21 +308,7 @@ form:after {
     float: left;
     margin-left: 38px
 }
-.button a {
-    background: url(http://cssdeck.com/uploads/media/items/8/8bcLQqF.png) 0 -112px no-repeat;
-    color: #7E7E7E;
-    font-size: 17px;
-    padding: 2px 0 2px 40px;
-    text-decoration: none;
-    transition: all 0.3s ease
-}
-.button a:hover {
-    background-position: 0 -135px;
-    color: #00aeef
-}
-header {
-    width: 100%
-}
+
 #nprogress .bar {
     background: #1ABB9C
 }
