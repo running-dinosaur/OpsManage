@@ -11,29 +11,9 @@ body {
     line-height: 1.471;
 }
 
-h1,
-.h1,
-.h2,
-h2,
-h3,
-.h3 {
-    margin-top: 10px;
-    margin-bottom: 10px
-}
-
-.clear {
-    clear: both
-}
-
-span.right {
-    float: right;
-    font-size: 14px !important
-}
-
 button,
 .btn {
-    margin-bottom: 5px;
-    margin-right: 5px
+    margin-bottom: 10px;
 }
 
 .input-group {
@@ -53,10 +33,6 @@ button,
 .form-control:focus {
     border-color: #CCD0D7;
     box-shadow: none !important
-}
-
-.btn {
-    border-radius: 3px
 }
 
 .login {
