@@ -15,8 +15,25 @@ def login(request):
     if request.session.get('username') is not None:
         return HttpResponseRedirect('/',{"user":request.user})
     else:
+        if request.method == "POST":
+            username = request.POST.get('username')
+            password = request.POST.get('password')
+            user = auth.authenticate(username=username,password=password)
+            if user and user.is_active:
+                auth.login(request,user)
+                request.session['username'] = username
+                return HttpResponseRedirect('/',{"user":request.user})
+            else:
+                return render(request,'login.html',{"login_error_info":"用户名或者密码错误","username":username},)  
+        else:
+            return render(request,'login.html')
+
+def login2(request):
+    if request.session.get('username') is not None:
+        return HttpResponseRedirect('/',{"user":request.user})
+    else:
         username = request.POST.get('username')
-        password = request.POST.get('password') 
+        password = request.POST.get('password')
         user = auth.authenticate(username=username,password=password)
         if user and user.is_active:
             auth.login(request,user)
@@ -24,16 +41,13 @@ def login(request):
             return HttpResponseRedirect('/',{"user":request.user})
         else:
             if request.method == "POST":
-                return render(request,'login.html',{"login_error_info":"用户名或者密码错误","username":username},)  
+                return render(request,'login.html',{"login_error_info":"用户名或者密码错误","username":username},)
             else:
-                return render(request,'login.html') 
-            
+                return render(request,'login.html')
+
 def logout(request):
     auth.logout(request)
     return HttpResponseRedirect('/login')   
-
-
-
 
 class Permission(View):
     def get(self, request, *args, **kwagrs):     
