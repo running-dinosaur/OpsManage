@@ -41,6 +41,7 @@ button,
 }
 
 .form-control {
+    height:54px;
     border-radius: 0;
     position: relative;
     z-index: 2;
