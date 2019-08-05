@@ -56,6 +56,11 @@ body {
     min-width: 280px
 }
 
+.login_content form {
+    margin: 20px 0;
+    position: relative
+}
+
 .login_content h1 {
     font: normal 25px Helvetica, Arial, sans-serif;
     letter-spacing: -0.05em;
@@ -100,24 +105,6 @@ body {
     box-shadow: none !important
 }
 
-
-
-
-
-.clearfix:after,
-form:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden
-}
-
-.login_content form {
-    margin: 20px 0;
-    position: relative
-}
-
 .login_content form input[type="text"],
 .login_content form input[type="password"] {
     border-radius: 3px;
@@ -142,6 +129,15 @@ form:after {
 button,
 .btn {
     margin-bottom: 10px;
+}
+
+.clearfix:after,
+form:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
 }
 
 .separator {
